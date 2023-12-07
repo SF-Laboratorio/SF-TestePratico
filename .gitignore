@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/codigo_fonte/.vs/SF.TestePratico
+/codigo_fonte/TesteV2/bin/Debug/net6.0
+/codigo_fonte/TesteV2/obj/Debug/net6.0
+/codigo_fonte/TesteV2/obj
