@@ -31,38 +31,34 @@ void Tarefa01()
 void Tarefa02()
 {
     // Tarefa 02 - Chamar o serviço EmpresaService e buscar a empresa com CNPJ 12.345.678/0001-99.
-    var empresa = empresaService.BuscarPorCnpj("12.345.678/0001-99");
 
     Console.WriteLine("Resultado tarefa 02:");
     //Imprimir o nome da empresa encontrada.
-    Console.WriteLine($"Empresa encontrada: {empresa?.Nome}");
+    
     Console.WriteLine(Environment.NewLine);
 }
 
 void Tarefa03()
 {
     // Tarefa 03 - Chamar o serviço EmpresaService e atualizar a empresa com CNPJ 12.345.678/0001-99 para a situação Inativo.
-    empresaService.Atualizar("12.345.678/0001-99", TipoSituacao.Inativo);
     
     Console.WriteLine("Resultado tarefa 03:");
-    //Listar todas as empresas INATIVAS.
     empresaService.ImprimirInformacoes();
 }
 
 void Tarefa04()
 {
     // Tarefa 04 - Listar todas as empresas INATIVAS e imprimir na tela.
-    var empresasInivativas = empresaService.ListarEmpresas().Where(e => e.Situacao == TipoSituacao.Inativo).ToList();
+    
 
     Console.WriteLine("Resultado tarefa 04:");
-    empresaService.ImprimirInformacoes(empresasInivativas);
+    
 }
 
 void Tarefa05()
 {
     // Tarefa 05 - Chamar o serviço EmpresaService e remover a empresa com CNPJ 98.765.432/0001-88.
-    empresaService.Remover("98.765.432/0001-88");
-
+    
     Console.WriteLine("Resultado tarefa 05:");
     empresaService.ImprimirInformacoes();
 }
