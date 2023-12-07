@@ -23,7 +23,7 @@ void Tarefa01()
     empresaService.Adicionar(new Empresa("Empresa Alpha", "12.345.678/0001-99", TipoSituacao.Ativo, 1000000));
     empresaService.Adicionar(new Empresa("Empresa Beta", "98.765.432/0001-88", TipoSituacao.Inativo, 500000));
     empresaService.Adicionar(new Empresa("Empresa Gama", "00.000.000/0001-91", TipoSituacao.Inativo, 500000));
-
+    
     Console.WriteLine("Resultado tarefa 01:");
     empresaService.ImprimirInformacoes();
 }
@@ -31,17 +31,15 @@ void Tarefa01()
 void Tarefa02()
 {
     // Tarefa 02 - Chamar o serviço EmpresaService e buscar a empresa com CNPJ 12.345.678/0001-99.
-
     Console.WriteLine("Resultado tarefa 02:");
-    //Imprimir o nome da empresa encontrada.
     
+    //Imprimir o nome da empresa encontrada.
     Console.WriteLine(Environment.NewLine);
 }
 
 void Tarefa03()
 {
     // Tarefa 03 - Chamar o serviço EmpresaService e atualizar a empresa com CNPJ 12.345.678/0001-99 para a situação Inativo.
-    
     Console.WriteLine("Resultado tarefa 03:");
     empresaService.ImprimirInformacoes();
 }
@@ -49,16 +47,12 @@ void Tarefa03()
 void Tarefa04()
 {
     // Tarefa 04 - Listar todas as empresas INATIVAS e imprimir na tela.
-    
-
     Console.WriteLine("Resultado tarefa 04:");
-    
 }
 
 void Tarefa05()
 {
     // Tarefa 05 - Chamar o serviço EmpresaService e remover a empresa com CNPJ 98.765.432/0001-88.
-    
     Console.WriteLine("Resultado tarefa 05:");
     empresaService.ImprimirInformacoes();
 }
@@ -67,7 +61,6 @@ void Tarefa06()
 {
     //Tarefa 06 - A impressão do faturamento anual está sem formato de moeda.
     //Como você faria para utilizar o método FormatarMoeda da classe Util para imprimir o faturamento anual?
-
     Console.WriteLine("Resultado tarefa 06:");
     empresaService.ImprimirInformacoes();
 }
